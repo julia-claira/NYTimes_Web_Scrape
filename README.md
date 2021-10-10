@@ -49,7 +49,7 @@ Since the sections were quite broad and sometimes ambiguous, I categorized the s
 
 As the language evolved over time, I further labeled articles with the term used: Transsexual, Transgender, Other (e.g., non-binary, transvestite, etc.)
 
-![database](/images/j_ny_trans_db.png)
+![database](/images/ny_trans_db.png)
 
 The application utilizes modularization by separating the GitHub API call and generation of the markdown into separate modules: `api.js` and `generateMarkdown.js`, respectively, inside the `utils` folder.
 
