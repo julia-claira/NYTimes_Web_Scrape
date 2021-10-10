@@ -9,8 +9,9 @@ Visibility is key to understanding, acceptance, and ultimately, hopefully, equal
 
 ## Table of Contents
 * [Tools](#Tools)
-* [Methodology](#methodology)
-* [Results](#results)
+* [Methodology](#Methodology)
+* [Data-Cleaning](#Data-Cleaning)
+* [Results](#Results)
   
 
 ## Tools
@@ -19,23 +20,36 @@ Web-Scraper: Jupyter Notebook, BeautifulSoup, Splinter
 Database:Pandas
 Graphs: Matplotlib
 
-## Usage 
-
-(images/readme-demo.png)
-
-When you run `node index.js`, the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
-
-The application then takes your responses and uses `axios` to fetch your GitHub profile from the [GitHub API](https://developer.github.com/v3/), including your GitHub profile picture (avatar) and email.
-From there, the application will generate markdown and a table of contents for the README conditionally based on your responses to the Inquirer prompts (so, if you don't answer the optional questions, such as Installation, an Installation section will not be included in your README). The README will also include badges for your GitHub repo.
-
-Finally, `fs.writeFile` is used to generate your project's README.md file. Check out the [`ExampleREADME.md`](https://github.com/connietran-dev/readme-generator/blob/master/ExampleREADME.md) in this repo as an example on the final output. 
-
-The lorem ipsum is generated thanks to [Social Good Ipsum](http://socialgoodipsum.com/#/).
-
 
 ## Methodology
 
-![Gif demo of README-generator](/images/j_notebook.png)
+The bot uses Chrome Driver to open New York Times and enter a specified search word between the given dates. This brings up anything that contains even a passing references the word 'transgender', so to ensure that the term is important to the article, the bot only pulls those that contain the word (or a related specified word) in the headline or subheader.
+
+![jupyter_notebook_image](/images/j_notebook.png)
+
+The bot pulls the headline, subheader, URL, date, and section for any given article that matches the requirement and stores it in a database.
+
+
+## Data-Cleaning
+
+Since the sections were quite broad and sometimes ambiguous, I categorized the sections into bins.
+
+'Arts': ['Movies','Books','Book Review', 'Theater','Arts','Style','Television','Fashion', 'First Chapters','Theater Reviews','Art & Design','Dance','Media','Awards Season','Music','International Arts','Art','The Learning Network','DealBook','Fashion & Beauty','Food']
+            
+'US New': ['U.S.', 'New York', 'Connecticut', 'Americas','Education','Education Life','Politics','Elections']
+            
+'World News': ['World','Africa','Europe','Asia Pacific','Global Opinion','Middle East','Canada','Australia']
+
+'Sports': ['Sports','Olympics','College Basketball','Soccer','Golf','N.B.A.', 'Baseball','Hockey','Tennis'],
+'Life': ['Home & Garden','Travel','Your Money','Real Estate','Job Market','Smarter Living','Family','Retirement','Self-Care', 'Parenting','Love','Business'],
+            
+'Science':['Psychology','Science','Technology','Personal Tech','Mind','Climate','Health','Fertility'],
+            
+'Misc': ['The City','Magazine','Week in Review','Archives','Long Island','Sunday Review','Views','The Upshot','Times Insider', 'T Magazine','Booming','NYT Now', 'Giving','Live','The Daily', 'Today’s Paper','Lesson Plans','Lens','Briefing', 'Letters', 'Move', 'Well', 'Reader Center', 'Podcasts','Crosswords & Games', 'Opinion','Obituaries','Westchester']
+
+As the language evolved over time, I further labeled articles with the term used: Transsexual, Transgender, Other (e.g., non-binary, transvestite, etc.)
+
+![database](/images/j_ny_trans_db.png)
 
 The application utilizes modularization by separating the GitHub API call and generation of the markdown into separate modules: `api.js` and `generateMarkdown.js`, respectively, inside the `utils` folder.
 
