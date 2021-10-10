@@ -30,7 +30,7 @@ In the past 20 years, Trans people's representation grew in sections such as Art
 
 ## Tools
 
-Web-Scraper: Jupyter Notebook, BeautifulSoup, Splinter
+Web-Scraper: Jupyter Notebook, Python, BeautifulSoup, Splinter
 Database:Pandas
 Graphs: Matplotlib
 
@@ -64,7 +64,7 @@ Since the sections were quite broad and sometimes ambiguous, I categorized the s
             
 <b>Misc:</b>  The City, Magazine, Week in Review, Archives, Long Island, Sunday Review, Views, The Upshot, Times Insider, T Magazine, Booming, NYT Now, Giving, Live, The Daily, Today’s Paper, Lesson Plans, Lens, Briefing, Letters, Move, Well, Reader Center, Podcasts, Crosswords & Games, Opinion, Obituaries, Westchester
 
-As the language evolved over time, I further labeled articles with the term used: Transsexual, Transgender, Other (e.g., non-binary, transvestite, etc.)
+As the language evolved over time, I further labeled articles with the term used: <b>Transsexual, Transgender, Other</b> (e.g., non-binary, transvestite, etc.)
 
 ![database](/images/ny_trans_db.png)
 
