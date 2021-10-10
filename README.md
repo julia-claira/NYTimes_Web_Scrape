@@ -21,7 +21,7 @@ Graphs: Matplotlib
 
 ## Usage 
 
-![Gif demo of README-generator](readme-demo.gif)
+(readme-demo.png)
 
 When you run `node index.js`, the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
 
