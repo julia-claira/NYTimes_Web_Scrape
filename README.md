@@ -2,7 +2,7 @@
 
 ## Description 
 
-Visibility is key to understanding, acceptance, and ultimately, hopefully, equality.  I wanted to measure how transgender representation has evolved over the decades. To that end, I scraped The New York Times' archives, seeing them as a valid barometer for the cutural milieu.
+Visibility is key to understanding, acceptance, and ultimately, hopefully, equality.  I wanted to measure how transgender representation has evolved over the decades. To that end, I scraped The New York Times' archives, seeing that periodical as a valid barometer for the cutural milieu.
   
 
 
