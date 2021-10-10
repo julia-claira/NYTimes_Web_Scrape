@@ -1,4 +1,4 @@
-# Web-Scraper - Transgender issues in The New York Times
+# Web-Scraper: Transgender issues in The New York Times
 
 ## Description 
 
@@ -8,10 +8,25 @@ Visibility is key to understanding, acceptance, and ultimately, hopefully, equal
 
 
 ## Table of Contents
+* [Results](#Results)
 * [Tools](#Tools)
-* [Methodology](#methodology)
-* [Results](#results)
+* [Methodology](#Methodology)
+* [Data-Cleaning](#Data-Cleaning)
+* [Contact](#Contact)
+
   
+
+## Results
+
+![line graph](/images/nytimes_trans_graph.png)
+
+Articles were few and far between for the 1980s and 1990s. With lesbian and gay issues coming more to the forefront in the 2000s, there was an small increase in transgender related articles. In 2014 and 2015 the number of articles rocketed, most likely due to the visibility of people like actress Laverne Cox and Caitlyn Jenner. The following years, issues such as trans women in sports became a heated topic covered by media.
+
+![pie graph](/images/nytimes_pie_A.jpg)
+
+In the past 20 years, Trans people's representation grew in sections such as Arts, Sports, and Life, indicating broader cultural visibility.
+
+
 
 ## Tools
 
@@ -19,47 +34,45 @@ Web-Scraper: Jupyter Notebook, BeautifulSoup, Splinter
 Database:Pandas
 Graphs: Matplotlib
 
-## Usage 
-
-(readme-demo.png)
-
-When you run `node index.js`, the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
-
-The application then takes your responses and uses `axios` to fetch your GitHub profile from the [GitHub API](https://developer.github.com/v3/), including your GitHub profile picture (avatar) and email.
-From there, the application will generate markdown and a table of contents for the README conditionally based on your responses to the Inquirer prompts (so, if you don't answer the optional questions, such as Installation, an Installation section will not be included in your README). The README will also include badges for your GitHub repo.
-
-Finally, `fs.writeFile` is used to generate your project's README.md file. Check out the [`ExampleREADME.md`](https://github.com/connietran-dev/readme-generator/blob/master/ExampleREADME.md) in this repo as an example on the final output. 
-
-The lorem ipsum is generated thanks to [Social Good Ipsum](http://socialgoodipsum.com/#/).
 
 
 ## Methodology
 
-![Gif demo of README-generator](/images/j_notebook)
+The bot uses Chrome Driver to open New York Times and enter a specified search word between the given dates. This brings up anything that contains even a passing references the word 'transgender', so to ensure that the term is important to the article, the bot only pulls those that contain the word (or a related specified word) in the headline or subheader.
 
-The application utilizes modularization by separating the GitHub API call and generation of the markdown into separate modules: `api.js` and `generateMarkdown.js`, respectively, inside the `utils` folder.
+![jupyter_notebook_image](/images/j_notebook.png)
 
-The application also utilizes, as much as possible, syntax and paradigms introduced in ES6 and beyond, including:
-
-- Arrow functions, 
-- `const`, `let`, 
-- Template literals, and
-- `async/await` to handle `inquirer`, `axios`, and `fs.writeFile` promises.
+The bot pulls the headline, subheader, URL, date, and section for any given article that matches the requirement and stores it in a database.
 
 
-## License
 
-MIT License
+## Data-Cleaning
 
----
+Since the sections were quite broad and sometimes ambiguous, I categorized the sections into bins.
 
-## Questions?
+'Arts': ['Movies','Books','Book Review', 'Theater','Arts','Style','Television','Fashion', 'First Chapters','Theater Reviews','Art & Design','Dance','Media','Awards Season','Music','International Arts','Art','The Learning Network','DealBook','Fashion & Beauty','Food']
+            
+'US New': ['U.S.', 'New York', 'Connecticut', 'Americas','Education','Education Life','Politics','Elections']
+            
+'World News': ['World','Africa','Europe','Asia Pacific','Global Opinion','Middle East','Canada','Australia']
 
-<img src="https://avatars3.githubusercontent.com/u/61371242?v=4" alt="Connie Tran, Full-Stack Web Developer" width="40%" />
+'Sports': ['Sports','Olympics','College Basketball','Soccer','Golf','N.B.A.', 'Baseball','Hockey','Tennis'],
+'Life': ['Home & Garden','Travel','Your Money','Real Estate','Job Market','Smarter Living','Family','Retirement','Self-Care', 'Parenting','Love','Business'],
+            
+'Science':['Psychology','Science','Technology','Personal Tech','Mind','Climate','Health','Fertility'],
+            
+'Misc': ['The City','Magazine','Week in Review','Archives','Long Island','Sunday Review','Views','The Upshot','Times Insider', 'T Magazine','Booming','NYT Now', 'Giving','Live','The Daily', 'Today’s Paper','Lesson Plans','Lens','Briefing', 'Letters', 'Move', 'Well', 'Reader Center', 'Podcasts','Crosswords & Games', 'Opinion','Obituaries','Westchester']
+
+As the language evolved over time, I further labeled articles with the term used: Transsexual, Transgender, Other (e.g., non-binary, transvestite, etc.)
+
+![database](/images/ny_trans_db.png)
 
 
-If you utilize this app to generate a README for your project, I'd love to see. Feel free to contact me with examples or any questions via the information below:
 
-GitHub: [@connietran-dev](https://api.github.com/users/connietran-dev)
+## Contact
 
-Email: connietrandev@gmail.com
+Feel free to contact me with examples or any questions via the information below:
+
+GitHub: [@julia-claira](https://api.github.com/users/julia-claira)
+
+Email: julia-claira@gmail.com
