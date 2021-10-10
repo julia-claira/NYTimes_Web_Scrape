@@ -50,18 +50,19 @@ The bot pulls the headline, subheader, URL, date, and section for any given arti
 
 Since the sections were quite broad and sometimes ambiguous, I categorized the sections into bins.
 
-<b>'Arts':</b> ['Movies','Books','Book Review', 'Theater','Arts','Style','Television','Fashion', 'First Chapters','Theater Reviews','Art & Design','Dance','Media','Awards Season','Music','International Arts','Art','The Learning Network','DealBook','Fashion & Beauty','Food']
+<b>Arts:</b>. Movies, Books, Book Review, Theater, Arts, Style, Television, Fashion, First Chapters, Theater Reviews, Art & Design, Dance, Media, Awards Season, Music, International Arts, Art, The Learning Network, DealBook, Fashion & Beauty, Food
             
-<b>'US New':</b>  ['U.S.', 'New York', 'Connecticut', 'Americas','Education','Education Life','Politics','Elections']
+<b>US New:</b>. U.S., New York, Connecticut, Americas, Education, Education Life, Politics, Elections
             
-<b>'World News':</b>  ['World','Africa','Europe','Asia Pacific','Global Opinion','Middle East','Canada','Australia']
+<b>World News:</b>  World, Africa, Europe, Asia Pacific, Global Opinion, Middle East, Canada, Australia
 
-<b>'Sports':</b>  ['Sports','Olympics','College Basketball','Soccer','Golf','N.B.A.', 'Baseball','Hockey','Tennis'],
-<b>'Life':</b>  ['Home & Garden','Travel','Your Money','Real Estate','Job Market','Smarter Living','Family','Retirement','Self-Care', 'Parenting','Love','Business'],
+<b>Sports:</b>  Sports, Olympics, College Basketball, Soccer, Golf, N.B.A., Baseball, Hockey, Tennis
+
+<b>Life:</b>  Home & Garden, Travel, Your Money, Real Estate, Job Market, Smarter Living, Family, Retirement, Self-Care, Parenting, Love, Business
             
-<b>'Science':</b> ['Psychology','Science','Technology','Personal Tech','Mind','Climate','Health','Fertility'],
+<b>Science:</b>  Psychology, Science, Technology, Personal Tech, Mind, Climate, Health, Fertility
             
-<b> 'Misc':</b>  ['The City','Magazine','Week in Review','Archives','Long Island','Sunday Review','Views','The Upshot','Times Insider', 'T Magazine','Booming','NYT Now', 'Giving','Live','The Daily', 'Today’s Paper','Lesson Plans','Lens','Briefing', 'Letters', 'Move', 'Well', 'Reader Center', 'Podcasts','Crosswords & Games', 'Opinion','Obituaries','Westchester']
+<b>Misc:</b>  The City, Magazine, Week in Review, Archives, Long Island, Sunday Review, Views, The Upshot, Times Insider, T Magazine, Booming, NYT Now, Giving, Live, The Daily, Today’s Paper, Lesson Plans, Lens, Briefing, Letters, Move, Well, Reader Center, Podcasts, Crosswords & Games, Opinion, Obituaries, Westchester
 
 As the language evolved over time, I further labeled articles with the term used: Transsexual, Transgender, Other (e.g., non-binary, transvestite, etc.)
 
