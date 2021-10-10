@@ -22,7 +22,7 @@ Visibility is key to understanding, acceptance, and ultimately, hopefully, equal
 
 Articles were few and far between for the 1980s and 1990s. With lesbian and gay issues coming more to the forefront in the 2000s, there was an small increase in transgender related articles. In 2014 and 2015 the number of articles rocketed, most likely due to the visibility of people like actress Laverne Cox and Caitlyn Jenner. The following years, issues such as trans women in sports became a heated topic covered by media.
 
-![pie graph](/images/nytimes_pie_A.jpg)
+![pie graph](/images/nytimes_pie_combined.jpg)
 
 In the past 20 years, Trans people's representation grew in sections such as Arts, Sports, and Life, indicating broader cultural visibility.
 
