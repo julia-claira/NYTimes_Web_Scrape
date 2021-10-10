@@ -22,7 +22,9 @@ Visibility is key to understanding, acceptance, and ultimately, hopefully, equal
 
 Articles were few and far between for the 1980s and 1990s. With lesbian and gay issues coming more to the forefront in the 2000s, there was an small increase in transgender related articles. In 2014 and 2015 the number of articles rocketed, most likely due to the visibility of people like actress Laverne Cox and Caitlyn Jenner. The following years, issues such as trans women in sports became a heated topic covered by media.
 
-![line graph](/images/nytimes_trans_graph.png)
+![pie graph](/images/nytimes_pie_A.jpg)
+
+In the past 20 years, Trans people's representation grew in sections such as Arts, Sports, and Life, indicating broader cultural visibility.
 
 
 ## Tools
@@ -72,19 +74,10 @@ The application also utilizes, as much as possible, syntax and paradigms introdu
 - `async/await` to handle `inquirer`, `axios`, and `fs.writeFile` promises.
 
 
-## License
+## Contact
 
-MIT License
+Feel free to contact me with examples or any questions via the information below:
 
----
+GitHub: [@julia-claira](https://api.github.com/users/julia-claira)
 
-## Questions?
-
-<img src="https://avatars3.githubusercontent.com/u/61371242?v=4" alt="Connie Tran, Full-Stack Web Developer" width="40%" />
-
-
-If you utilize this app to generate a README for your project, I'd love to see. Feel free to contact me with examples or any questions via the information below:
-
-GitHub: [@connietran-dev](https://api.github.com/users/connietran-dev)
-
-Email: connietrandev@gmail.com
+Email: julia-claira@gmail.com
