@@ -31,7 +31,9 @@ In the past 20 years, Trans people's representation grew in sections such as Art
 ## Tools
 
 Web-Scraper: Jupyter Notebook, Python, BeautifulSoup, Splinter
+
 Database:Pandas
+
 Graphs: Matplotlib
 
 
