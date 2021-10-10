@@ -35,7 +35,7 @@ The lorem ipsum is generated thanks to [Social Good Ipsum](http://socialgoodipsu
 
 ## Methodology
 
-![Gif demo of README-generator](/images/j_notebook)
+![Gif demo of README-generator](/images/j_notebook.png)
 
 The application utilizes modularization by separating the GitHub API call and generation of the markdown into separate modules: `api.js` and `generateMarkdown.js`, respectively, inside the `utils` folder.
 
