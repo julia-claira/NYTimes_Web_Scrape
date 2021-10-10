@@ -1,4 +1,4 @@
-# Web-Scraper - Transgender issues in The New York Times
+# Web-Scraper: Transgender issues in The New York Times
 
 ## Description 
 
@@ -27,11 +27,13 @@ Articles were few and far between for the 1980s and 1990s. With lesbian and gay 
 In the past 20 years, Trans people's representation grew in sections such as Arts, Sports, and Life, indicating broader cultural visibility.
 
 
+
 ## Tools
 
 Web-Scraper: Jupyter Notebook, BeautifulSoup, Splinter
 Database:Pandas
 Graphs: Matplotlib
+
 
 
 ## Methodology
@@ -41,6 +43,7 @@ The bot uses Chrome Driver to open New York Times and enter a specified search w
 ![jupyter_notebook_image](/images/j_notebook.png)
 
 The bot pulls the headline, subheader, URL, date, and section for any given article that matches the requirement and stores it in a database.
+
 
 
 ## Data-Cleaning
@@ -64,14 +67,6 @@ As the language evolved over time, I further labeled articles with the term used
 
 ![database](/images/ny_trans_db.png)
 
-The application utilizes modularization by separating the GitHub API call and generation of the markdown into separate modules: `api.js` and `generateMarkdown.js`, respectively, inside the `utils` folder.
-
-The application also utilizes, as much as possible, syntax and paradigms introduced in ES6 and beyond, including:
-
-- Arrow functions, 
-- `const`, `let`, 
-- Template literals, and
-- `async/await` to handle `inquirer`, `axios`, and `fs.writeFile` promises.
 
 
 ## Contact
